@@ -12,7 +12,7 @@ module.exports = {
       },
       fontSize: {
         'custom-2xl' : '1.65rem',
-        'custom-lg' : '1.11rem',
+        'custom-lg' : '1.12rem',
         'custom-4xl' : '2.75rem'
       },
       borderWidth : {

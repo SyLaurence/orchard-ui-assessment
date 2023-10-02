@@ -1,0 +1,14 @@
+{
+  "name": "filta-assessment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch-css": "tailwindcss -i ./app/src/css/index.css -o ./dist/index.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

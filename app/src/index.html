@@ -5,37 +5,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="/dist/index.css" rel="stylesheet">
     </head>
-    <body class="text-neutral-50">
+    <body>
         <!-- Main Content goes here.. -->
-        <main>
+        <main class="main-content">
             <!-- [START] BODY'S NEED -->
-            <section>
+            <section class="text-neutral-50 grid grid-cols-3 gap-x-6 gap-y-5">
                 <!-- Images Section -->
-                <section>
-                    <img>
-                    <img>
-                    <img>
-                </section>
+                <div class="grid grid-cols-2 gap-x-6 gap-y-5 col-span-2">
+                    <img src="../assets/component-01/taking-care.jpg" class="row-span-2">
+                    <img src="../assets/component-01/rotten-fruits-veggies.jpg" class="">
+                    <img src="../assets/component-01/asparagus.jpg" class="row-span-2">
+                </div>
 
                 <!-- Article Section -->
-                <section>
+                <div class="">
                     <div>
-                        <h2>ANSWER YOUR BODY'S NEEDS</h2>
-                        <article>The way ingredients are sourced affects the way we nourish our bodies. Author Mark Schatzer believes our body naturally develops an appetite for the foods and nutrients it needs to be healthy, but that artificial flavourings are getting in the way. This can be reversed by focusing on high-quality ingredients and being mindful as your appetite guides you to consume accodring to your body's needs.</article>
+                        <h2 class="font-open-sans font-light pb-3 border-b border-white border-sold text-custom-2xl">ANSWER YOUR BODY'S NEEDS</h2>
+                        <article class="font-open-sans font-light mt-6 leading-8 text-custom-lg">The way ingredients are sourced affects the way we nourish our bodies. Author Mark Schatzer believes our body naturally develops an appetite for the foods and nutrients it needs to be healthy, but that artificial flavourings are getting in the way. This can be reversed by focusing on high-quality ingredients and being mindful as your appetite guides you to consume accodring to your body's needs.</article>
                     </div>
                     <div>
-                        <label>BE MINDFUL</label>
-                        <p>Sourcing local or organic food is a good way to start being more mindful about what you're cooking and eating.</p>
+                        <h4 class="mt-10 text-red-600">BE MINDFUL</h4>
+                        <p class="mt-4 leading-7 font-semibold text-lg">Sourcing local or organic food is a good way to start being more mindful about what you're cooking and eating.</p>
                     </div>
-                </section>
+                </div>
             </section>
             <!-- [END] BODY'S NEED -->
 
-
             <!-- [START] ALL THE LATEST -->
-            <section>
+            <section class="text-neutral-50 flex flex-col justify-center">
                 <h1>ALL THE LATEST FROM AEG</h1>
-                <section>
+                <div class="flex flex-row justify-center">
                     <div>
                         <img>
                         <label>Summer Lunch Menu By Mark Best</label>
@@ -54,7 +53,7 @@
                         <p>This exclusive cookbook gives you all the know-how you need. We've designed it to make sure you get the most out of our products - and the best out of your food.</p>
                         <a href="#">READ MORE</a>
                     </div>
-                </section>
+                </div>
             </section>
             <!-- [END] ALL THE LATEST -->
         </main>

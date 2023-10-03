@@ -5,9 +5,6 @@ const modalDiv = document.getElementById('modal')
 // Modal img element
 const modalImg = document.getElementById('modal-img')
 
-// Body element
-const body = document.querySelector('body')
-
 
 /**
  * Reusable Image modal
@@ -17,8 +14,8 @@ const body = document.querySelector('body')
  * @param {string} src 
  */
 function showModal(src) {
-    modalImg.src = src;
-    body.classList.add('overflow-hidden')
+    modalImg.src = src
+    disableScroll()
     modalDiv.classList.remove('hidden')
 }
 
@@ -28,9 +25,35 @@ function showModal(src) {
  * 
  */
 function hideModal() {
-    body.classList.remove('overflow-hidden')
+    enableScroll() 
     modalDiv.classList.add('hidden')
 }
+
+
+/**
+ * Disable page scrolling by setting scroll values to current value (unchanged) on scroll event
+ * 
+ */
+function disableScroll() {
+    // Get the current page scroll position
+    scrollTop = document.documentElement.scrollTop
+    scrollLeft = document.documentElement.scrollLeft,
+  
+        // if any scroll is attempted,
+        // set this to the previous value
+        window.onscroll = function() {
+            window.scrollTo(scrollLeft, scrollTop)
+        };
+}
+  
+/**
+ * Enable page scrolling
+ * 
+ */
+function enableScroll() {
+    window.onscroll = function() {}
+}
+
 
 // Get all the links from the All the Latest Section
 const links = document.getElementsByClassName('read-more')

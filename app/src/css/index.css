@@ -33,3 +33,11 @@
 body {
     background-color: #0e1414;
 }
+
+.section-2-p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

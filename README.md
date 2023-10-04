@@ -22,7 +22,13 @@ cd orchard-ui-assessment
 npm i
 ```
 
-4. Start the local server and go to [localhost:3000](http://localhost:3000)
+4. Build JS and CSS.
+
+```
+npm run build
+```
+
+5. Start the local server and go to [localhost:3000](http://localhost:3000)
 
 ```
 npm run serve

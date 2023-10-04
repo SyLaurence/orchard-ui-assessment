@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch-css": "tailwindcss -i ./app/src/css/index.css -o ./dist/index.css --watch",
-    "build": "webpack",
+    "build": "webpack&&tailwindcss -i ./app/src/css/index.css -o ./dist/index.css",
     "serve": "node ./app/src/js/util/serve.js"
   },
   "author": "",

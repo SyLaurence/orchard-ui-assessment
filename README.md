@@ -2,6 +2,8 @@
 
 ## How to Install
 
+Note: Make sure [node](https://nodejs.org/en/download) is installed on your machine!
+
 1. Clone the repository in your project directory.
 
 ```

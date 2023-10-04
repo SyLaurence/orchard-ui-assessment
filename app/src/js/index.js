@@ -5,7 +5,6 @@ const modalDiv = document.getElementById('modal')
 // Modal img element
 const modalImg = document.getElementById('modal-img')
 
-
 /**
  * Reusable Image modal
  * Shows the image modal by removing the 'hidden' class
@@ -13,7 +12,7 @@ const modalImg = document.getElementById('modal-img')
  * 
  * @param {string} src 
  */
-function showModal(src) {
+const showModal = (src) => {
     modalImg.src = src
     disableScroll()
     modalDiv.classList.remove('hidden')
@@ -24,7 +23,7 @@ function showModal(src) {
  * Enables scroll on body
  * 
  */
-function hideModal() {
+const hideModal = () => {
     enableScroll() 
     modalDiv.classList.add('hidden')
 }
@@ -34,7 +33,7 @@ function hideModal() {
  * Disable page scrolling by setting scroll values to current value (unchanged) on scroll event
  * 
  */
-function disableScroll() {
+const disableScroll = () => {
     // Get the current page scroll position
     scrollTop = document.documentElement.scrollTop
     scrollLeft = document.documentElement.scrollLeft,
@@ -50,9 +49,21 @@ function disableScroll() {
  * Enable page scrolling
  * 
  */
-function enableScroll() {
+const enableScroll = () => {
     window.onscroll = function() {}
 }
+
+// Add close functionality for the modal
+const closeIcon = document.getElementById('close-modal')
+closeIcon.addEventListener('click', hideModal)
+
+// Get all image elements
+const imagesWithModal = document.getElementsByClassName('img-w-modal')
+
+// Add a Click event to each Image element that will show a modal on Click
+Array.from(imagesWithModal).map( (imgElement) => {
+    imgElement.addEventListener('click', (e) => showModal(e.target.getAttribute('data-img')))
+} )
 
 
 // Get all the links from the All the Latest Section

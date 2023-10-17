@@ -1,2 +1,4 @@
 node_modules
-/dist
+/dist/assets
+/dist/index_bundle.js
+/dist/index.css
